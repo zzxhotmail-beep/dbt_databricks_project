@@ -1,0 +1,4 @@
+{
+    "dbt.dbtPythonPathOverride": "/Users/zzx/Desktop/DBT_project/.venv/bin/python3",
+    "dbt.perspectiveTheme": "Vaporwave"
+}

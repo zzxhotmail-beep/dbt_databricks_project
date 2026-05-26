@@ -1,0 +1,12 @@
+sources:
+  - name: source # this is the source_name
+    database: '{{target.catalog}}'
+    schema: source
+    tables:
+      - name: fact_sales # this is the table_name
+      - name: fact_returns
+      - name: dim_date
+      - name: dim_customer
+      - name: dim_product
+      - name: dim_store
+      - name: items

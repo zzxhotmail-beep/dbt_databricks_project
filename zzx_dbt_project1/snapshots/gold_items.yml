@@ -1,0 +1,10 @@
+snapshots:
+  - name: gold_items # 1. 快照表名字
+    relation: ref('source_gold_items')  # 2. 源表（要追踪谁）
+    config:
+      schema: gold   # 3. 存在哪个schema下
+      database: '{{target.catalog}}'  # 4. 存在哪个库
+      unique_key: id  # 5. 唯一键（订单ID）
+      strategy: timestamp  # 6. 用时间戳判断是否变化
+      updated_at: updateDate # 7. column name 
+      dbt_valid_to_current: "to_date('9999-12-31')" # Specifies that current records should have `dbt_valid_to` set to `'9999-12-31'` instead of `NULL`.
