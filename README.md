@@ -68,8 +68,11 @@ Built modular SQL transformation layers following analytics engineering best pra
 
 ### 🔹 Tests
 Implemented comprehensive schema and data quality tests including:
+
 **Generic tests**: unique, not null, accepted values, relationships
+
 **Singular tests**: Custom SQL validation for business logic and data accuracy
+
 **Custom generic tests**: Reusable test macros for scalable data quality governance
 
 ### 🔹 Seeds
